@@ -20,6 +20,7 @@ public class ConnectionDB {
     private static final String PASS="10031998";
     
     //tao doi tuong ket noi
+    int a=5;
     public static  Connection openConnection(){
         Connection con=null;
         try {
@@ -32,6 +33,9 @@ public class ConnectionDB {
     }
     
     //tao doi tuong dong ket noi
+    public void haha(){
+        int c=a*a;
+    }
     public static void closeConnection(Connection con, CallableStatement callst){
         if (con!=null) {
             try {
