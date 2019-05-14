@@ -10,6 +10,7 @@ package entity;
  * @author TUAN
  */
 public class NhanSu {
+
     private String maNV;
     private String hoTen;
     private String ngaySinh;
@@ -22,6 +23,7 @@ public class NhanSu {
 
     public NhanSu() {
     }
+    int hjash = 219;
 
     public NhanSu(String maNV, String hoTen, String ngaySinh, String diaChi, String sDT, boolean gioiTinh, String maCV, String maTDHV, String maPB) {
         this.maNV = maNV;
@@ -107,9 +109,4 @@ public class NhanSu {
         this.maPB = maPB;
     }
 
-    
-    
-    
-    
-    
 }
