@@ -23,8 +23,11 @@ public class ConnectionDB {
     int n = 0;
 
     //tao doi tuong ket noi
-    public static Connection openConnection() {
-        Connection con = null;
+
+    public static  Connection openConnection(){
+        Connection con=null;
+
+
         try {
             Class.forName(DRIVER);
             con = DriverManager.getConnection(URL, USER, PASS);
@@ -39,8 +42,13 @@ public class ConnectionDB {
     }
 
     //tao doi tuong dong ket noi
-    public static void closeConnection(Connection con, CallableStatement callst) {
-        if (con != null) {
+
+    public void haha1(){
+        int c=a*a;
+    }
+    public static void closeConnection(Connection con, CallableStatement callst){
+        if (con!=null) {
+
             try {
                 con.close();
             } catch (Exception e) {
